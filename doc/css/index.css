@@ -1,0 +1,22 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #24292E;
+}
+
+.header .menu-left {
+    list-style-type: none;
+}
+
+.header .menu-left li {
+    display: inline-table;
+}
+
+.header .menu-left li a {
+    display: table-cell;
+    vertical-align: middle;
+}
