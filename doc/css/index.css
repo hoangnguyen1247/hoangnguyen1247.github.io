@@ -12,11 +12,65 @@
     list-style-type: none;
 }
 
-.header .menu-left li {
+.header .menu-left .menu-item {
     display: inline-table;
+    height: 52px;
 }
 
-.header .menu-left li a {
+.header .menu-left .menu-item .menu-link {
     display: table-cell;
     vertical-align: middle;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header .menu-left .menu-item .menu-link:focus, .header .menu-left .menu-item .menu-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+}
+
+.header .menu-left .menu-item .menu-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.header .menu-left .menu-item .menu-link.open, .header .menu-left .menu-item .menu-link.active {
+    color: white;
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-light .navbar-nav .nav-link.disabled {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-nav .open > .nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.open,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-inverse .navbar-nav .nav-link:focus, .navbar-inverse .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-inverse .navbar-nav .nav-link.disabled {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-inverse .navbar-nav .open > .nav-link,
+.navbar-inverse .navbar-nav .active > .nav-link,
+.navbar-inverse .navbar-nav .nav-link.open,
+.navbar-inverse .navbar-nav .nav-link.active {
+    color: white;
 }
